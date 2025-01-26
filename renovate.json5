@@ -2,5 +2,16 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
+  ],
+  regexManagers: [
+    {
+      fileMatch: [
+        "(^|/|\\.)go.mk$",
+      ],
+      matchStrings: [
+        "depName=(?<depName>.*?)\\s.*?_version=(?<currentValue>.*)\\s",
+      ],
+      datasourceTemplate: "go",
+    },
   ]
 }

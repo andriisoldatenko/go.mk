@@ -45,7 +45,7 @@ go/vet:
 
 ## Runs golangci-lint
 go/golangci:
-	golangci-lint run --build-tags "$(shell ./hack/build/create_go_build_tags.sh true)" --timeout 300s
+	golangci-lint run --timeout 300s
 
 ## Runs all the linting tools
 go/lint: go/format go/vet go/golangci

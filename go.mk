@@ -4,7 +4,7 @@ golang_ci_cmd_version=v1.63.4
 # renovate depName=github.com/daixiang0/gci
 gci_version=v0.13.5
 # renovate depName=golang.org/x/tools
-golang_tools_version=v0.29.0
+golang_tools_version=v0.30.0
 
 # Get the currently used golang install path (in GOPATH/bin, unless GOBIN is set)
 ifeq (,$(shell go env GOBIN))
